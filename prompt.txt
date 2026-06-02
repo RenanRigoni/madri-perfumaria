@@ -1,0 +1,287 @@
+Crie uma landing page premium, moderna e altamente visual para a marca “MADRI PERFUMARIA”.
+
+Objetivo:
+Criar uma landing page diferenciada para uma perfumaria, com foco em luxo, glamour, sofisticação e experiência sensorial. A página não deve parecer genérica, simples ou “template pronto”. Ela precisa transmitir uma marca elegante, refinada, moderna e memorável.
+
+Identidade visual:
+Use como base as logos enviadas da MADRI PERFUMARIA.
+A identidade deve seguir a estética das imagens:
+- Fundo principal escuro, próximo de preto/chocolate profundo.
+- Dourado metálico como cor principal.
+- Sensação de luxo, perfume importado, boutique premium.
+- Visual elegante, com brilho sutil, sem exagero.
+- Usar bastante contraste entre fundo escuro, dourado e tons quentes.
+- A logo deve aparecer com destaque, mas sem ficar gigante demais.
+- Usar a versão horizontal da logo no header e a versão principal no hero ou em seção institucional.
+
+Cores sugeridas:
+- Preto luxuoso: #050403
+- Marrom/chocolate escuro: #1A100B
+- Dourado principal: #D6B45D
+- Dourado claro: #F4E3A1
+- Bronze: #8A642D
+- Creme suave para textos: #F7EFD2
+- Cinza quente para textos secundários: #B8AA8C
+
+Estilo geral:
+A landing page deve ter aparência de marca premium, com:
+- Hero section cinematográfica.
+- Efeitos de luz dourada.
+- Gradientes escuros sofisticados.
+- Elementos com glassmorphism sutil.
+- Texturas discretas no fundo, como parede escura, couro, mármore escuro ou papel premium.
+- Reflexos metálicos suaves.
+- Partículas douradas discretas.
+- Animações modernas ao rolar a página.
+- Transições bonitas entre seções, não cortes secos.
+- Cards elegantes com hover refinado.
+- Botões com aparência premium.
+- Layout responsivo impecável para celular.
+
+Stack:
+Criar em HTML, CSS e JavaScript puro, salvo em arquivos separados:
+- index.html
+- style.css
+- script.js
+
+Não usar bibliotecas pesadas. Pode usar animações com CSS e JavaScript puro. Se usar ícones, usar Lucide Icons via CDN ou SVG inline.
+
+Estrutura da landing page:
+
+1. Header premium fixo
+- Logo horizontal da MADRI à esquerda.
+- Menu com links: Início, Fragrâncias, Como Escolher, Coleções, Sobre, Contato.
+- Botão destacado: “Falar no WhatsApp”.
+- Header com fundo translúcido/blur ao rolar.
+- No mobile, menu elegante com abertura suave.
+
+2. Hero section cinematográfica
+Criar uma abertura impactante.
+Conteúdo:
+Título principal:
+“MADRI PERFUMARIA”
+
+Subtítulo:
+“Fragrâncias que traduzem presença, elegância e personalidade.”
+
+Texto de apoio:
+“Descubra perfumes selecionados para diferentes estilos, momentos e sensações — do sofisticado amadeirado ao doce envolvente.”
+
+Botões:
+- “Conhecer fragrâncias”
+- “Pedir indicação no WhatsApp”
+
+Elementos visuais:
+- Logo/símbolo da MADRI em destaque.
+- Efeito de brilho dourado atrás da logo.
+- Partículas douradas flutuando.
+- Linhas finas douradas decorativas.
+- Efeito parallax leve.
+- Uma silhueta abstrata de frasco de perfume ou artefato visual inspirado em perfume, sem precisar de foto real de produto.
+- Criar sensação de “boutique de luxo”.
+
+3. Seção “A experiência MADRI”
+Explicar a proposta da marca com texto elegante:
+“Na MADRI, o perfume não é apenas um aroma. É presença, memória e identidade. Cada fragrância pode revelar uma intenção: sofisticação, frescor, sensualidade, leveza ou intensidade.”
+
+Criar 3 cards premium:
+- Presença
+Texto: “Perfumes marcantes para quem deseja ser lembrado.”
+- Elegância
+Texto: “Notas sofisticadas que acompanham momentos especiais.”
+- Identidade
+Texto: “Escolhas olfativas que combinam com seu estilo pessoal.”
+
+Cada card deve ter microanimação no hover, borda dourada sutil e fundo escuro translúcido.
+
+4. Seção especial e diferenciada: “Guia das Fragrâncias”
+Essa seção precisa ser um dos pontos altos da página.
+
+Criar uma experiência visual explicando famílias olfativas. Usar cards interativos ou uma espécie de mapa olfativo elegante.
+
+Famílias para incluir:
+
+Amadeirado:
+“Notas quentes, sofisticadas e marcantes. Ideal para quem busca presença, elegância e profundidade.”
+
+Doce / Gourmand:
+“Fragrâncias envolventes com sensação cremosa, confortável e sedutora. Costumam transmitir proximidade e personalidade.”
+
+Cítrico:
+“Leve, fresco e vibrante. Combina com dias quentes, rotina, energia e sensação de limpeza.”
+
+Floral:
+“Delicado, elegante e versátil. Pode ir do romântico ao sofisticado, dependendo da combinação das notas.”
+
+Oriental / Âmbar:
+“Intenso, quente e misterioso. Indicado para quem gosta de perfumes noturnos, marcantes e sensuais.”
+
+Aromático / Fresco:
+“Limpo, moderno e confortável. Excelente para uso diário, trabalho e ocasiões casuais.”
+
+Visual da seção:
+- Criar uma “roda olfativa” ou “constelação de fragrâncias”.
+- Cada família deve ter um card com ícone minimalista.
+- Ao passar o mouse, o card deve acender com brilho dourado e mostrar detalhes.
+- No mobile, virar uma sequência vertical elegante.
+
+5. Seção “Como uma fragrância se conecta com outra”
+Criar uma seção explicando combinações olfativas de forma simples e visual.
+
+Título:
+“Como as notas se conectam”
+
+Texto:
+“Um perfume é formado por camadas. Algumas notas aparecem primeiro, outras evoluem com o tempo e outras permanecem na pele por mais horas.”
+
+Criar uma pirâmide olfativa elegante com 3 níveis:
+- Notas de saída
+Texto: “Primeira impressão. Geralmente mais frescas, cítricas ou leves.”
+- Notas de coração
+Texto: “A personalidade da fragrância. Pode ser floral, especiada, aromática ou doce.”
+- Notas de fundo
+Texto: “A assinatura final. Normalmente amadeirada, âmbar, musk, baunilha ou couro.”
+
+Adicionar uma explicação visual:
+Exemplo:
+“Cítrico + Amadeirado = frescor sofisticado”
+“Doce + Âmbar = perfume envolvente e marcante”
+“Floral + Musk = elegância limpa e confortável”
+“Amadeirado + Especiado = presença intensa e refinada”
+
+6. Seção “Como escolher seu perfume”
+Criar uma seção prática e bonita, como um mini guia.
+
+Título:
+“Escolha pelo momento, pela intenção e pela sua personalidade.”
+
+Criar 4 blocos:
+- Para o dia a dia: cítricos, frescos e aromáticos.
+- Para encontros: doces, âmbar e florais envolventes.
+- Para eventos: amadeirados, orientais e perfumes intensos.
+- Para trabalho: fragrâncias limpas, elegantes e equilibradas.
+
+Adicionar CTA:
+“Não sabe qual combina com você? A MADRI te ajuda a escolher.”
+Botão:
+“Pedir indicação personalizada”
+
+7. Seção “Coleções MADRI”
+Como não tenho produtos reais ainda, criar cards demonstrativos com categorias, não produtos específicos.
+
+Cards:
+- Essenciais do Dia
+Descrição: “Fragrâncias leves, versáteis e confortáveis.”
+- Noites Marcantes
+Descrição: “Perfumes intensos, quentes e sofisticados.”
+- Elegância Clássica
+Descrição: “Aromas refinados para quem prefere presença discreta.”
+- Assinatura Pessoal
+Descrição: “Perfumes para transformar sua presença em memória.”
+
+Cada card deve parecer uma vitrine premium, com fundo escuro, reflexo dourado e botão “Consultar opções”.
+
+8. Seção “Sobre a MADRI”
+Texto institucional:
+“A MADRI PERFUMARIA nasce com a proposta de aproximar pessoas de fragrâncias que realmente combinam com sua identidade. Mais do que vender perfumes, a marca busca orientar escolhas, traduzir estilos e tornar cada aroma uma extensão da presença de quem usa.”
+
+Usar imagem/arte abstrata de perfume, frasco ou textura luxuosa.
+
+9. Seção CTA final
+Criar uma seção forte, elegante e comercial.
+
+Título:
+“Encontre a fragrância que combina com sua presença.”
+
+Texto:
+“Fale com a MADRI e receba uma indicação personalizada de acordo com seu estilo, ocasião e preferência olfativa.”
+
+Botões:
+- “Chamar no WhatsApp”
+- “Ver fragrâncias disponíveis”
+
+10. Rodapé premium
+- Logo MADRI.
+- Texto curto: “Perfumes selecionados com elegância, presença e identidade.”
+- Links rápidos.
+- Instagram.
+- WhatsApp.
+- Direitos reservados.
+
+Animações e efeitos obrigatórios:
+- Header muda ao rolar.
+- Hero com entrada suave: fade, blur e deslocamento vertical.
+- Elementos dourados com brilho sutil.
+- Cards com hover elegante, elevação leve e borda dourada.
+- Transições entre seções com gradientes ou divisores orgânicos.
+- Scroll reveal nas seções.
+- Cursor glow ou efeito de luz seguindo o mouse, apenas no desktop.
+- Parallax leve em alguns elementos decorativos.
+- Nada exagerado, nada carnavalesco. O luxo precisa ser sóbrio.
+
+Direção visual:
+Evitar:
+- Layout genérico.
+- Cards simples demais.
+- Fundo branco.
+- Cores chamativas fora da identidade.
+- Excesso de texto.
+- Ícones infantis.
+- Animações exageradas.
+- Cara de site barato.
+
+Priorizar:
+- Respiro visual.
+- Tipografia elegante.
+- Composição premium.
+- Dourado bem aplicado.
+- Sensação de boutique.
+- Modernidade.
+- Sofisticação.
+- Experiência visual diferenciada.
+
+Tipografia:
+Usar Google Fonts:
+- Títulos: Playfair Display, Cormorant Garamond ou Cinzel.
+- Textos: Inter, Manrope ou Montserrat.
+Combinar uma fonte serifada luxuosa nos títulos com uma sans-serif moderna nos textos.
+
+Imagens e assets:
+Usar as logos enviadas:
+- MADRI.png
+- MADRI_HORIZONTAL.png
+- WhatsApp Image 2026-05-08 at 08.37.52.jpeg
+
+Se precisar criar elementos visuais, usar CSS: gradientes, formas abstratas, brilhos, linhas douradas, sombras e textura. Não depender de banco de imagem externo.
+
+Responsividade:
+A página precisa ficar excelente em:
+- Desktop grande.
+- Notebook.
+- Tablet.
+- Celular.
+
+No celular:
+- Hero deve continuar impactante.
+- Textos não podem ficar pequenos.
+- Cards devem empilhar com espaçamento bonito.
+- Menu deve ser limpo e funcional.
+- Botões devem ser fáceis de clicar.
+
+SEO básico:
+Incluir title:
+“MADRI Perfumaria | Fragrâncias com presença, elegância e identidade”
+
+Meta description:
+“Conheça a MADRI Perfumaria e descubra fragrâncias sofisticadas para diferentes estilos, momentos e personalidades.”
+
+Performance:
+- Código limpo.
+- CSS organizado por seções.
+- JavaScript leve.
+- Evitar dependências desnecessárias.
+- Imagens otimizadas.
+- Boa acessibilidade: contraste, alt nas imagens e botões claros.
+
+Importante:
+Entregue uma landing page com aparência realmente premium, como se fosse para uma marca de perfumaria de luxo. O resultado precisa impressionar visualmente logo na primeira dobra.

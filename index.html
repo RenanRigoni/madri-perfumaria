@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MADRI Perfumaria | Fragrâncias com presença, elegância e identidade</title>
+  <meta name="description" content="Conheça a MADRI Perfumaria e descubra fragrâncias sofisticadas para diferentes estilos, momentos e personalidades." />
+  <meta name="theme-color" content="#050403" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MADRI Perfumaria | Fragrâncias com presença, elegância e identidade" />
+  <meta property="og:description" content="Fragrâncias sofisticadas para diferentes estilos, momentos e personalidades." />
+  <meta property="og:image" content="assets/MADRI.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/MADRI_SUBMARK.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Película de grão / textura premium -->
+  <div class="grain" aria-hidden="true"></div>
+  <!-- Brilho que segue o cursor (desktop) -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ====================== HEADER ====================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__brand" aria-label="MADRI Perfumaria — início">
+        <img src="assets/MADRI_HORIZONTAL.svg" alt="MADRI Perfumaria" class="header__logo" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav__link">Início</a>
+        <a href="#fragrancias" class="nav__link">Fragrâncias</a>
+        <a href="#como-escolher" class="nav__link">Como Escolher</a>
+        <a href="#colecoes" class="nav__link">Coleções</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#contato" class="btn btn--gold btn--sm" data-wa aria-label="Falar no WhatsApp">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav class="mobile-nav__inner" aria-label="Navegação mobile">
+      <a href="#inicio" class="mobile-nav__link">Início</a>
+      <a href="#fragrancias" class="mobile-nav__link">Fragrâncias</a>
+      <a href="#como-escolher" class="mobile-nav__link">Como Escolher</a>
+      <a href="#colecoes" class="mobile-nav__link">Coleções</a>
+      <a href="#sobre" class="mobile-nav__link">Sobre</a>
+      <a href="#contato" class="mobile-nav__link">Contato</a>
+      <a href="#contato" class="btn btn--gold mobile-nav__cta" data-wa>Falar no WhatsApp</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__particles" id="particles" aria-hidden="true"></canvas>
+      <div class="hero__glow" data-parallax="0.25" aria-hidden="true"></div>
+      <div class="hero__lines" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__symbol reveal" data-parallax="0.12" aria-hidden="true">
+          <img src="assets/MADRI_SUBMARK.svg" alt="" class="hero__bottle" />
+        </div>
+
+        <p class="eyebrow reveal">Boutique de Perfumes</p>
+        <h1 class="hero__title reveal">
+          <span class="hero__title-main gold-text">MADRI</span>
+          <span class="hero__title-sub">Perfumaria</span>
+        </h1>
+        <p class="hero__subtitle reveal">Fragrâncias que traduzem presença, elegância e personalidade.</p>
+        <p class="hero__support reveal">Descubra perfumes selecionados para diferentes estilos, momentos e sensações — do sofisticado amadeirado ao doce envolvente.</p>
+
+        <div class="hero__cta reveal">
+          <a href="#fragrancias" class="btn btn--gold">Conhecer fragrâncias</a>
+          <a href="#contato" class="btn btn--ghost" data-wa>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm4.52 11.97c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+            Pedir indicação no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <a href="#experiencia" class="hero__scroll" aria-label="Rolar para baixo">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ====================== EXPERIÊNCIA ====================== -->
+    <section class="section experience" id="experiencia">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">A experiência MADRI</p>
+          <h2 class="section-title">O perfume como <span class="gold-text">presença</span></h2>
+          <p class="section-lead">Na MADRI, o perfume não é apenas um aroma. É presença, memória e identidade. Cada fragrância pode revelar uma intenção: sofisticação, frescor, sensualidade, leveza ou intensidade.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <span class="card__glow" aria-hidden="true"></span>
+            <div class="card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5"/></svg>
+            </div>
+            <h3 class="card__title">Presença</h3>
+            <p class="card__text">Perfumes marcantes para quem deseja ser lembrado.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__glow" aria-hidden="true"></span>
+            <div class="card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l3.2 8.8L28 16l-8.8 3.2L16 28l-3.2-8.8L4 16l8.8-3.2z"/></svg>
+            </div>
+            <h3 class="card__title">Elegância</h3>
+            <p class="card__text">Notas sofisticadas que acompanham momentos especiais.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__glow" aria-hidden="true"></span>
+            <div class="card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c2 5 6 7 6 12a6 6 0 0 1-12 0c0-5 4-7 6-12z"/></svg>
+            </div>
+            <h3 class="card__title">Identidade</h3>
+            <p class="card__text">Escolhas olfativas que combinam com seu estilo pessoal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== GUIA DAS FRAGRÂNCIAS (constelação) ====================== -->
+    <section class="section families" id="fragrancias">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Guia das fragrâncias</p>
+          <h2 class="section-title">O mapa das <span class="gold-text">famílias olfativas</span></h2>
+          <p class="section-lead">Cada família carrega uma intenção. Explore a constelação e descubra qual conversa com a sua presença.</p>
+        </div>
+
+        <div class="constellation reveal" id="constellation">
+          <!-- Linhas de conexão -->
+          <svg class="constellation__lines" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <g stroke="url(#cline)" stroke-width="1" fill="none" opacity="0.5">
+              <line x1="300" y1="300" x2="300" y2="70"/>
+              <line x1="300" y1="300" x2="499" y2="185"/>
+              <line x1="300" y1="300" x2="499" y2="415"/>
+              <line x1="300" y1="300" x2="300" y2="530"/>
+              <line x1="300" y1="300" x2="101" y2="415"/>
+              <line x1="300" y1="300" x2="101" y2="185"/>
+            </g>
+            <defs>
+              <linearGradient id="cline" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#D6B45D" stop-opacity="0.05"/>
+                <stop offset="0.5" stop-color="#F4E3A1" stop-opacity="0.55"/>
+                <stop offset="1" stop-color="#D6B45D" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- Medalhão central -->
+          <div class="constellation__core" id="famCore">
+            <div class="core__default">
+              <img src="assets/MADRI_SUBMARK.svg" alt="" class="core__mark" aria-hidden="true" />
+              <span class="core__hint">Passe o mouse sobre cada família</span>
+            </div>
+            <div class="core__detail" aria-live="polite">
+              <h3 class="core__title"></h3>
+              <p class="core__text"></p>
+            </div>
+          </div>
+
+          <!-- Nós -->
+          <button class="fam" data-pos="n" data-title="Amadeirado" data-text="Notas quentes, sofisticadas e marcantes. Ideal para quem busca presença, elegância e profundidade.">
+            <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7.5"/><circle cx="16" cy="16" r="3"/></svg></span>
+            <span class="fam__name">Amadeirado</span>
+          </button>
+
+          <button class="fam" data-pos="ne" data-title="Doce / Gourmand" data-text="Fragrâncias envolventes com sensação cremosa, confortável e sedutora. Costumam transmitir proximidade e personalidade.">
+            <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c2.5 5 7 7.5 7 13a7 7 0 0 1-14 0c0-5.5 4.5-8 7-13z"/></svg></span>
+            <span class="fam__name">Doce</span>
+          </button>
+
+          <button class="fam" data-pos="se" data-title="Cítrico" data-text="Leve, fresco e vibrante. Combina com dias quentes, rotina, energia e sensação de limpeza.">
+            <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 4v24M4 16h24M7.5 7.5l17 17M24.5 7.5l-17 17"/></svg></span>
+            <span class="fam__name">Cítrico</span>
+          </button>
+
+          <button class="fam" data-pos="s" data-title="Floral" data-text="Delicado, elegante e versátil. Pode ir do romântico ao sofisticado, dependendo da combinação das notas.">
+            <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="3.2"/><path d="M16 16c0-6-4-9-4-9s-1 5 4 9zM16 16c0 6-4 9-4 9s-1-5 4-9zM16 16c6 0 9-4 9-4s-5-1-9 4zM16 16c-6 0-9-4-9-4s5-1 9 4z"/></svg></span>
+            <span class="fam__name">Floral</span>
+          </button>
+
+          <button class="fam" data-pos="sw" data-title="Oriental / Âmbar" data-text="Intenso, quente e misterioso. Indicado para quem gosta de perfumes noturnos, marcantes e sensuais.">
+            <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l3 6 6 1.5-4.5 4.2 1 6.3L16 24l-5.5 3 1-6.3L7 10.5 13 9z"/></svg></span>
+            <span class="fam__name">Âmbar</span>
+          </button>
+
+          <button class="fam" data-pos="nw" data-title="Aromático / Fresco" data-text="Limpo, moderno e confortável. Excelente para uso diário, trabalho e ocasiões casuais.">
+            <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28V8M16 8c0-3 3-5 3-5M16 14c-4 0-7-2-7-6 4 0 7 2 7 6zM16 18c4 0 7-2 7-6-4 0-7 2-7 6z"/></svg></span>
+            <span class="fam__name">Aromático</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== NOTAS / PIRÂMIDE ====================== -->
+    <section class="section pyramid-sec" id="notas">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Composição olfativa</p>
+          <h2 class="section-title">Como as notas <span class="gold-text">se conectam</span></h2>
+          <p class="section-lead">Um perfume é formado por camadas. Algumas notas aparecem primeiro, outras evoluem com o tempo e outras permanecem na pele por mais horas.</p>
+        </div>
+
+        <div class="pyramid-wrap">
+          <!-- Pirâmide visual -->
+          <div class="pyramid reveal" id="pyramid">
+            <svg viewBox="0 0 300 260" class="pyramid__svg" aria-hidden="true">
+              <polygon class="pyr-seg" data-level="top"    points="150,15 188,90 112,90"/>
+              <polygon class="pyr-seg" data-level="heart"  points="188,98 226,173 74,173 112,98"/>
+              <polygon class="pyr-seg" data-level="base"   points="226,181 264,256 36,256 74,181"/>
+            </svg>
+          </div>
+
+          <!-- Níveis -->
+          <div class="levels">
+            <article class="level reveal" data-level="top">
+              <span class="level__tag">01</span>
+              <h3 class="level__title">Notas de saída</h3>
+              <p class="level__text">Primeira impressão. Geralmente mais frescas, cítricas ou leves.</p>
+            </article>
+            <article class="level reveal" data-level="heart">
+              <span class="level__tag">02</span>
+              <h3 class="level__title">Notas de coração</h3>
+              <p class="level__text">A personalidade da fragrância. Pode ser floral, especiada, aromática ou doce.</p>
+            </article>
+            <article class="level reveal" data-level="base">
+              <span class="level__tag">03</span>
+              <h3 class="level__title">Notas de fundo</h3>
+              <p class="level__text">A assinatura final. Normalmente amadeirada, âmbar, musk, baunilha ou couro.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Combinações -->
+        <div class="combos reveal">
+          <div class="combo"><span>Cítrico</span><i>+</i><span>Amadeirado</span><b>=</b><em>frescor sofisticado</em></div>
+          <div class="combo"><span>Doce</span><i>+</i><span>Âmbar</span><b>=</b><em>envolvente e marcante</em></div>
+          <div class="combo"><span>Floral</span><i>+</i><span>Musk</span><b>=</b><em>elegância limpa</em></div>
+          <div class="combo"><span>Amadeirado</span><i>+</i><span>Especiado</span><b>=</b><em>presença refinada</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== COMO ESCOLHER ====================== -->
+    <section class="section choose" id="como-escolher">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Como escolher seu perfume</p>
+          <h2 class="section-title">Escolha pelo momento, pela intenção e pela sua <span class="gold-text">personalidade</span></h2>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="choose-card reveal">
+            <div class="choose-card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6"/><path d="M16 2v4M16 26v4M2 16h4M26 16h4M6 6l3 3M23 23l3 3M26 6l-3 3M9 23l-3 3"/></svg>
+            </div>
+            <h3 class="choose-card__title">Para o dia a dia</h3>
+            <p class="choose-card__text">Cítricos, frescos e aromáticos.</p>
+          </article>
+          <article class="choose-card reveal">
+            <div class="choose-card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27S5 20 5 12.5A5.5 5.5 0 0 1 16 9a5.5 5.5 0 0 1 11 3.5C27 20 16 27 16 27z"/></svg>
+            </div>
+            <h3 class="choose-card__title">Para encontros</h3>
+            <p class="choose-card__text">Doces, âmbar e florais envolventes.</p>
+          </article>
+          <article class="choose-card reveal">
+            <div class="choose-card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l3.5 7.2 7.9 1.1-5.7 5.6 1.3 7.9L16 28l-7.3 3.8 1.3-7.9-5.7-5.6 7.9-1.1z"/></svg>
+            </div>
+            <h3 class="choose-card__title">Para eventos</h3>
+            <p class="choose-card__text">Amadeirados, orientais e perfumes intensos.</p>
+          </article>
+          <article class="choose-card reveal">
+            <div class="choose-card__icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="11" width="18" height="15" rx="2"/><path d="M11 11V8a5 5 0 0 1 10 0v3"/></svg>
+            </div>
+            <h3 class="choose-card__title">Para trabalho</h3>
+            <p class="choose-card__text">Fragrâncias limpas, elegantes e equilibradas.</p>
+          </article>
+        </div>
+
+        <div class="choose-cta reveal">
+          <p>Não sabe qual combina com você? <span class="gold-text">A MADRI te ajuda a escolher.</span></p>
+          <a href="#contato" class="btn btn--gold" data-wa>Pedir indicação personalizada</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== COLEÇÕES ====================== -->
+    <section class="section collections" id="colecoes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Coleções MADRI</p>
+          <h2 class="section-title">Curadorias para cada <span class="gold-text">presença</span></h2>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="vitrine reveal">
+            <div class="vitrine__shine" aria-hidden="true"></div>
+            <div class="vitrine__bottle" aria-hidden="true"></div>
+            <h3 class="vitrine__title">Essenciais do Dia</h3>
+            <p class="vitrine__text">Fragrâncias leves, versáteis e confortáveis.</p>
+            <a href="#contato" class="vitrine__link" data-wa>Consultar opções <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="vitrine reveal">
+            <div class="vitrine__shine" aria-hidden="true"></div>
+            <div class="vitrine__bottle" aria-hidden="true"></div>
+            <h3 class="vitrine__title">Noites Marcantes</h3>
+            <p class="vitrine__text">Perfumes intensos, quentes e sofisticados.</p>
+            <a href="#contato" class="vitrine__link" data-wa>Consultar opções <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="vitrine reveal">
+            <div class="vitrine__shine" aria-hidden="true"></div>
+            <div class="vitrine__bottle" aria-hidden="true"></div>
+            <h3 class="vitrine__title">Elegância Clássica</h3>
+            <p class="vitrine__text">Aromas refinados para quem prefere presença discreta.</p>
+            <a href="#contato" class="vitrine__link" data-wa>Consultar opções <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="vitrine reveal">
+            <div class="vitrine__shine" aria-hidden="true"></div>
+            <div class="vitrine__bottle" aria-hidden="true"></div>
+            <h3 class="vitrine__title">Assinatura Pessoal</h3>
+            <p class="vitrine__text">Perfumes para transformar sua presença em memória.</p>
+            <a href="#contato" class="vitrine__link" data-wa>Consultar opções <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SOBRE ====================== -->
+    <section class="section about" id="sobre">
+      <div class="container about__inner">
+        <div class="about__text reveal">
+          <p class="eyebrow">Sobre a MADRI</p>
+          <h2 class="section-title">Mais do que perfumes, <span class="gold-text">uma extensão de quem usa</span></h2>
+          <p class="about__p">A MADRI PERFUMARIA nasce com a proposta de aproximar pessoas de fragrâncias que realmente combinam com sua identidade. Mais do que vender perfumes, a marca busca orientar escolhas, traduzir estilos e tornar cada aroma uma extensão da presença de quem usa.</p>
+          <div class="about__marks">
+            <span>Curadoria</span><i></i><span>Orientação</span><i></i><span>Identidade</span>
+          </div>
+        </div>
+        <div class="about__visual reveal" data-parallax="0.08">
+          <div class="about__frame">
+            <div class="about__halo" aria-hidden="true"></div>
+            <img src="assets/MADRI.svg" alt="Símbolo da MADRI Perfumaria" class="about__logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CTA FINAL ====================== -->
+    <section class="section final-cta" id="contato">
+      <div class="final-cta__glow" aria-hidden="true"></div>
+      <div class="container final-cta__inner reveal">
+        <p class="eyebrow">Indicação personalizada</p>
+        <h2 class="final-cta__title">Encontre a fragrância que combina com sua <span class="gold-text">presença</span>.</h2>
+        <p class="final-cta__text">Fale com a MADRI e receba uma indicação personalizada de acordo com seu estilo, ocasião e preferência olfativa.</p>
+        <div class="final-cta__buttons">
+          <a href="#contato" class="btn btn--gold btn--lg" data-wa>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm4.52 11.97c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a href="#fragrancias" class="btn btn--ghost btn--lg">Ver fragrâncias disponíveis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/MADRI_HORIZONTAL.svg" alt="MADRI Perfumaria" class="footer__logo" />
+        <p class="footer__tag">Perfumes selecionados com elegância, presença e identidade.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Links rápidos">
+        <h4>Navegação</h4>
+        <a href="#inicio">Início</a>
+        <a href="#fragrancias">Fragrâncias</a>
+        <a href="#como-escolher">Como Escolher</a>
+        <a href="#colecoes">Coleções</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <a href="#contato" class="footer__social" data-wa>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm4.52 11.97c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#" class="footer__social" data-ig>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year"></span> MADRI Perfumaria. Todos os direitos reservados.</span>
+        <span class="footer__sign">Presença · Elegância · Identidade</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

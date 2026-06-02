@@ -1,0 +1,13 @@
+# Dependências
+node_modules/
+package-lock.json
+
+# Artefatos temporários de screenshot/validação
+_*.png
+_*.cjs
+
+# Sistema / logs
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
