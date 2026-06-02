@@ -9,7 +9,7 @@
      Troque pelo número real (formato internacional, só dígitos)
      e pelo @ do Instagram da MADRI. */
   const CONFIG = {
-    whatsapp: '5599999999999',                 // ex.: 55 + DDD + número
+    whatsapp: '5518991146622',                 // ex.: 55 + DDD + número
     waMessage: 'Olá! Vim pela MADRI Perfumaria e gostaria de uma indicação personalizada.',
     instagram: 'https://instagram.com/madriperfumaria'
   };
@@ -55,12 +55,21 @@
     const menu = $('#mobileNav');
     if (!toggle || !menu) return;
 
+    const getFocusable = () =>
+      Array.from(menu.querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])'));
+
     const setState = open => {
       toggle.classList.toggle('open', open);
       menu.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
       menu.setAttribute('aria-hidden', String(!open));
       document.body.style.overflow = open ? 'hidden' : '';
+      if (open) {
+        const focusable = getFocusable();
+        if (focusable.length) setTimeout(() => focusable[0].focus(), 80);
+      } else {
+        toggle.focus();
+      }
     };
 
     toggle.addEventListener('click', () => setState(!menu.classList.contains('open')));
@@ -68,7 +77,19 @@
       a.addEventListener('click', () => setState(false))
     );
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && menu.classList.contains('open')) setState(false);
+      if (!menu.classList.contains('open')) return;
+      if (e.key === 'Escape') { setState(false); return; }
+      if (e.key === 'Tab') {
+        const focusable = getFocusable();
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first.focus();
+        }
+      }
     });
   }
 
@@ -237,6 +258,8 @@
     levels.forEach(l => {
       l.addEventListener('mouseenter', () => link(l.dataset.level, true));
       l.addEventListener('mouseleave', () => link(l.dataset.level, false));
+      l.addEventListener('focus', () => link(l.dataset.level, true));
+      l.addEventListener('blur', () => link(l.dataset.level, false));
     });
     segs.forEach(s => {
       s.addEventListener('mouseenter', () => link(s.dataset.level, true));
