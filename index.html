@@ -187,8 +187,8 @@
                   <span class="core__fval" id="coreQuando"></span>
                 </div>
                 <div class="core__field">
-                  <span class="core__fkey">Combina com</span>
-                  <span class="core__fval" id="coreCombina"></span>
+                  <span class="core__fkey">Notas típicas</span>
+                  <span class="core__fval" id="coreNotas"></span>
                 </div>
                 <div class="core__field">
                   <span class="core__fkey">Perfil ideal</span>
@@ -203,7 +203,7 @@
             data-title="Amadeirado"
             data-sensacao="Quente, profundo, sofisticado"
             data-quando="Trabalho, jantares, eventos"
-            data-combina="Âmbar · Especiado · Musk"
+            data-notas="Cedro · Sândalo · Patchouli"
             data-perfil="Presença marcante e duradoura">
             <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="7"/><circle cx="16" cy="16" r="3"/></svg></span>
             <span class="fam__name">Amadeirado</span>
@@ -213,7 +213,7 @@
             data-title="Doce / Gourmand"
             data-sensacao="Envolvente, cremoso, sedutor"
             data-quando="Encontros, saídas, frio"
-            data-combina="Âmbar · Floral · Baunilha"
+            data-notas="Baunilha · Caramelo · Âmbar"
             data-perfil="Personalidade calorosa e próxima">
             <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c2.5 5 7.5 8 7.5 13a7.5 7.5 0 0 1-15 0c0-5 5-8 7.5-13z"/></svg></span>
             <span class="fam__name">Doce</span>
@@ -223,7 +223,7 @@
             data-title="Cítrico"
             data-sensacao="Fresco, leve, vibrante"
             data-quando="Dia a dia, trabalho, verão"
-            data-combina="Amadeirado · Aromático"
+            data-notas="Bergamota · Limão · Laranja"
             data-perfil="Energia e leveza natural">
             <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 5v22M5 16h22M8.1 8.1l11.8 11.8M8.1 23.9L19.9 12.1" stroke-linecap="round"/></svg></span>
             <span class="fam__name">Cítrico</span>
@@ -233,7 +233,7 @@
             data-title="Floral"
             data-sensacao="Delicado, elegante, versátil"
             data-quando="Qualquer ocasião"
-            data-combina="Musk · Amadeirado · Cítrico"
+            data-notas="Rosa · Jasmim · Peônia"
             data-perfil="Feminilidade sofisticada">
             <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="3"/><path d="M16 16c0-7-4-10-4-10s-1 6 4 10zm0 0c0 7-4 10-4 10s-1-6 4-10zm0 0c7 0 10-4 10-4s-6-1-10 4zm0 0c-7 0-10-4-10-4s6-1 10 4z"/></svg></span>
             <span class="fam__name">Floral</span>
@@ -243,7 +243,7 @@
             data-title="Âmbar / Oriental"
             data-sensacao="Intenso, quente, misterioso"
             data-quando="Noites, eventos especiais"
-            data-combina="Amadeirado · Especiado · Doce"
+            data-notas="Âmbar · Incenso · Oud"
             data-perfil="Quem quer ser lembrado">
             <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l2.8 5.8 6.4 1.4-4.6 4.4 1.1 6.4L16 24l-5.7 3 1.1-6.4-4.6-4.4 6.4-1.4z"/></svg></span>
             <span class="fam__name">Âmbar</span>
@@ -253,7 +253,7 @@
             data-title="Aromático / Fresco"
             data-sensacao="Limpo, moderno, confortável"
             data-quando="Uso diário, trabalho, academia"
-            data-combina="Cítrico · Amadeirado · Musk"
+            data-notas="Lavanda · Menta · Alecrim"
             data-perfil="Praticidade e frescor diário">
             <span class="fam__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28V10M16 10c0-3 3-5 3-5M16 16c-5 0-8-3-8-7 5 0 8 3 8 7zM16 20c5 0 8-3 8-7-5 0-8 3-8 7z"/></svg></span>
             <span class="fam__name">Aromático</span>
@@ -427,6 +427,10 @@
             <p class="qr__label">Sua família ideal</p>
             <h3 class="qr__family" id="qrFamily"></h3>
             <p class="qr__desc" id="qrDesc"></p>
+            <div class="qr__pairing" id="qrPairing" hidden>
+              <p class="qr__pairing-label">Combina bem com:</p>
+              <span class="qr__pairing-chip" id="qrPairingChip"></span>
+            </div>
             <a href="#" class="btn btn--gold btn--lg" id="qrWa" data-wa target="_blank" rel="noopener noreferrer">
               <svg class="ico" aria-hidden="true"><use href="#ico-wa"/></svg>
               Falar com a MADRI para indicação personalizada
@@ -453,8 +457,14 @@
             <div class="vitrine__badge">Leve a Médio</div>
             <div class="vitrine__bottle-css" aria-hidden="true"></div>
             <div class="vitrine__content">
+              <p class="vitrine__memory">A leveza de uma manhã sem pressa</p>
               <h3 class="vitrine__title">Essenciais do Dia</h3>
               <p class="vitrine__text">Fragrâncias leves, versáteis e confortáveis para o cotidiano.</p>
+              <div class="vitrine__notes" aria-label="Notas em destaque">
+                <span class="vitrine__note">Cítrico</span>
+                <span class="vitrine__note">Aromático</span>
+                <span class="vitrine__note">Musk</span>
+              </div>
               <a href="https://wa.me/5518991146622?text=Ol%C3%A1!%20Vim%20pela%20MADRI%20Perfumaria%20e%20gostaria%20de%20uma%20indica%C3%A7%C3%A3o%20personalizada." class="vitrine__cta" data-wa target="_blank" rel="noopener noreferrer">
                 Consultar opções
                 <svg viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
@@ -469,8 +479,14 @@
             <div class="vitrine__badge">Alto a Intenso</div>
             <div class="vitrine__bottle-css" aria-hidden="true"></div>
             <div class="vitrine__content">
+              <p class="vitrine__memory">O rastro que fica depois que você vai</p>
               <h3 class="vitrine__title">Noites Marcantes</h3>
               <p class="vitrine__text">Perfumes intensos, quentes e sofisticados para noites especiais.</p>
+              <div class="vitrine__notes" aria-label="Notas em destaque">
+                <span class="vitrine__note">Âmbar</span>
+                <span class="vitrine__note">Amadeirado</span>
+                <span class="vitrine__note">Especiado</span>
+              </div>
               <a href="https://wa.me/5518991146622?text=Ol%C3%A1!%20Vim%20pela%20MADRI%20Perfumaria%20e%20gostaria%20de%20uma%20indica%C3%A7%C3%A3o%20personalizada." class="vitrine__cta" data-wa target="_blank" rel="noopener noreferrer">
                 Consultar opções
                 <svg viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
@@ -485,8 +501,14 @@
             <div class="vitrine__badge">Médio a Alto</div>
             <div class="vitrine__bottle-css" aria-hidden="true"></div>
             <div class="vitrine__content">
+              <p class="vitrine__memory">A presença antes da primeira palavra</p>
               <h3 class="vitrine__title">Elegância Clássica</h3>
               <p class="vitrine__text">Aromas refinados para quem prefere presença discreta e sofisticada.</p>
+              <div class="vitrine__notes" aria-label="Notas em destaque">
+                <span class="vitrine__note">Floral</span>
+                <span class="vitrine__note">Musk</span>
+                <span class="vitrine__note">Sândalo</span>
+              </div>
               <a href="https://wa.me/5518991146622?text=Ol%C3%A1!%20Vim%20pela%20MADRI%20Perfumaria%20e%20gostaria%20de%20uma%20indica%C3%A7%C3%A3o%20personalizada." class="vitrine__cta" data-wa target="_blank" rel="noopener noreferrer">
                 Consultar opções
                 <svg viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
@@ -501,8 +523,14 @@
             <div class="vitrine__badge">Personalizável</div>
             <div class="vitrine__bottle-css" aria-hidden="true"></div>
             <div class="vitrine__content">
+              <p class="vitrine__memory">Antes de falar, você já foi reconhecido</p>
               <h3 class="vitrine__title">Assinatura Pessoal</h3>
               <p class="vitrine__text">Perfumes para transformar sua presença em memória inconfundível.</p>
+              <div class="vitrine__notes" aria-label="Notas em destaque">
+                <span class="vitrine__note">Amadeirado</span>
+                <span class="vitrine__note">Âmbar</span>
+                <span class="vitrine__note">Baunilha</span>
+              </div>
               <a href="https://wa.me/5518991146622?text=Ol%C3%A1!%20Vim%20pela%20MADRI%20Perfumaria%20e%20gostaria%20de%20uma%20indica%C3%A7%C3%A3o%20personalizada." class="vitrine__cta" data-wa target="_blank" rel="noopener noreferrer">
                 Consultar opções
                 <svg viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
@@ -518,7 +546,7 @@
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Diferenciais</p>
-          <h2 class="section-title" id="h2-trust">Por que escolher<br><span class="gold-text">a MADRI?</span></h2>
+          <h2 class="section-title" id="h2-trust">Por que escolher a<br><span class="gold-text">Madri Perfumaria?</span></h2>
         </div>
 
         <div class="trust-grid">
@@ -567,6 +595,7 @@
         <div class="about__text reveal">
           <p class="eyebrow">Sobre a MADRI</p>
           <h2 class="section-title" id="h2-sobre">Mais do que perfumes, <span class="gold-text">uma extensão de quem usa</span></h2>
+          <blockquote class="about__quote">"Cada fragrância é uma decisão sobre quem você quer ser."</blockquote>
           <p class="about__p">A MADRI PERFUMARIA nasce com a proposta de aproximar pessoas de fragrâncias que realmente combinam com sua identidade. Mais do que vender perfumes, buscamos orientar escolhas, traduzir estilos e tornar cada aroma uma extensão da presença de quem usa.</p>
           <div class="about__marks">
             <span>Curadoria</span><span class="sep" aria-hidden="true"></span><span>Orientação</span><span class="sep" aria-hidden="true"></span><span>Identidade</span>

@@ -135,6 +135,22 @@
     update();
   }
 
+  /* ===== Hero background parallax — Chanel-style ===== */
+  function heroParallax() {
+    if (prefersReduced) return;
+    const img = $('.hero__bg');
+    if (!img) return;
+    let raf = null;
+    const update = () => {
+      img.style.transform = `translate3d(0,${(window.scrollY * 0.35).toFixed(1)}px,0)`;
+      raf = null;
+    };
+    window.addEventListener('scroll', () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    }, { passive: true });
+    update();
+  }
+
   /* ===== Partículas douradas (canvas) ===== */
   function particles() {
     const canvas = $('#particles');
@@ -192,7 +208,7 @@
     const nameEl  = $('#coreName');
     const sensEl  = $('#coreSensacao');
     const quanEl  = $('#coreQuando');
-    const combEl  = $('#coreCombina');
+    const combEl  = $('#coreNotas');
     const perfEl  = $('#corePerfil');
     const lines   = $$('.constellation__lines line');
     const fams    = $$('.fam', wrap);
@@ -202,7 +218,7 @@
       if (nameEl) nameEl.textContent = fam.dataset.title  || '';
       if (sensEl) sensEl.textContent = fam.dataset.sensacao || '';
       if (quanEl) quanEl.textContent = fam.dataset.quando  || '';
-      if (combEl) combEl.textContent = fam.dataset.combina || '';
+      if (combEl) combEl.textContent = fam.dataset.notas    || '';
       if (perfEl) perfEl.textContent = fam.dataset.perfil  || '';
       lines.forEach((l, j) => {
         l.style.opacity     = j === i ? '1'   : '0.15';
@@ -263,8 +279,8 @@
             <span class="fam-acc__val">${fam.dataset.quando || ''}</span>
           </div>
           <div class="fam-acc__field">
-            <span class="fam-acc__key">Combina com</span>
-            <span class="fam-acc__val">${fam.dataset.combina || ''}</span>
+            <span class="fam-acc__key">Notas típicas</span>
+            <span class="fam-acc__val">${fam.dataset.notas || ''}</span>
           </div>
           <div class="fam-acc__field">
             <span class="fam-acc__key">Perfil ideal</span>
@@ -374,6 +390,15 @@
       leve:        'Prefira concentrações mais suaves (EDT ou Colônia). Ideal para climas quentes e uso cotidiano.',
       equilibrada: 'Uma concentração EDP é perfeita para você: versátil, com boa fixação sem ser excessivo.',
       marcante:    'Aposte em EDP ou Parfum. Maior concentração, fixação longa — ideal para noites e ambientes especiais.'
+    },
+
+    pairings: {
+      amadeirado: 'Especiado · Âmbar',
+      doce:       'Floral · Baunilha',
+      citrico:    'Aromático · Musk',
+      floral:     'Musk · Sândalo',
+      ambar:      'Amadeirado · Especiado',
+      aromatico:  'Cítrico · Amadeirado'
     }
   };
 
@@ -421,6 +446,14 @@
 
       if (qrFamily) qrFamily.textContent = family.name;
       if (qrDesc)   qrDesc.textContent   = `${family.desc} ${iNote}`;
+
+      const pairingEl   = $('#qrPairing');
+      const pairingChip = $('#qrPairingChip');
+      const pairing     = QUIZ.pairings[familyKey];
+      if (pairingEl && pairingChip && pairing) {
+        pairingChip.textContent = pairing;
+        pairingEl.hidden = false;
+      }
 
       const waMsgResult = `Olá! Fiz o quiz da MADRI Perfumaria e meu perfil indica a família ${family.name}. Gostaria de uma indicação personalizada!`;
       if (qrWa) {
@@ -498,6 +531,7 @@
     scrollReveal();
     cursorGlow();
     parallax();
+    heroParallax();
     particles();
     constellation();
     buildAccordion();
