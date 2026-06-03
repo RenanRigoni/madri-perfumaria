@@ -927,6 +927,39 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   background:var(--gold-06);font-weight:600;
 }
 
+/* ====== 18b. EM BREVE / COMING SOON ====== */
+.coming-soon__inner{
+  max-width:680px;margin:0 auto;text-align:center;
+  padding:clamp(44px,6vw,72px) clamp(28px,5vw,64px);
+  background:linear-gradient(160deg,rgba(36,23,16,.5),rgba(8,5,4,.6));
+  border:1px solid var(--border);border-radius:24px;position:relative;overflow:hidden;
+}
+.coming-soon__inner::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(60% 100% at 50% 0%,rgba(214,180,93,.08),transparent 60%);
+  pointer-events:none;
+}
+.coming-soon__inner>.eyebrow{position:relative;z-index:1}
+.coming-soon__inner>.section-title{position:relative;z-index:1;margin-top:10px}
+.coming-soon__badge{
+  display:inline-block;margin-bottom:22px;
+  padding:6px 22px;border-radius:100px;
+  background:rgba(8,5,4,.85);border:1px solid var(--border-strong);
+  font-family:var(--font-body);font-size:.82rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold);font-weight:600;
+  position:relative;z-index:1;
+}
+.coming-soon__text{
+  color:var(--warm-gray);font-weight:400;
+  font-size:clamp(1.05rem,1.6vw,1.18rem);max-width:500px;
+  margin:18px auto 38px;line-height:1.8;position:relative;z-index:1;
+}
+.coming-soon__buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+@media(max-width:680px){
+  .coming-soon__buttons{flex-direction:column;align-items:center}
+  .coming-soon__buttons .btn{width:100%;max-width:340px}
+}
+
 /* ====== 19. MOTION / A11Y ====== */
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
 @media(prefers-reduced-motion:reduce){

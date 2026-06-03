@@ -454,7 +454,10 @@
         pairingEl.hidden = false;
       }
 
-      const waMsgResult = `Olá! Fiz o quiz da MADRI Perfumaria e meu perfil indica a família ${family.name}. Gostaria de uma indicação personalizada!`;
+      const momentoLabel   = { dia: 'dia a dia', trabalho: 'trabalho', encontro: 'encontro', evento: 'evento especial' };
+      const sensacaoLabel  = { elegancia: 'elegância', frescor: 'frescor', sensualidade: 'sensualidade', presenca: 'marcância' };
+      const intensidadeLabel = { leve: 'leve', equilibrada: 'equilibrada', marcante: 'marcante' };
+      const waMsgResult = `Olá! Fiz o quiz da MADRI. Meu resultado foi ${family.name}. Quero uma indicação para ${momentoLabel[moment] || moment}, com sensação de ${sensacaoLabel[sensacao] || sensacao} e intensidade ${intensidadeLabel[intensity] || intensity}.`;
       if (qrWa) {
         qrWa.setAttribute('href', `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(waMsgResult)}`);
         qrWa.setAttribute('target', '_blank');
