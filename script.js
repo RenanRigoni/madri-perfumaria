@@ -22,12 +22,12 @@
       if (el.id === 'qrWa') return; // quiz result tem link próprio
       el.setAttribute('href', wa);
       el.setAttribute('target', '_blank');
-      el.setAttribute('rel', 'noopener');
+      el.setAttribute('rel', 'noopener noreferrer');
     });
     $$('[data-ig]').forEach(el => {
       el.setAttribute('href', CONFIG.instagram);
       el.setAttribute('target', '_blank');
-      el.setAttribute('rel', 'noopener');
+      el.setAttribute('rel', 'noopener noreferrer');
     });
   }
 
@@ -267,7 +267,6 @@
 
       const body = document.createElement('div');
       body.className = 'fam-acc__body';
-      body.hidden = true;
       body.innerHTML = `
         <div class="fam-acc__fields">
           <div class="fam-acc__field">
@@ -294,11 +293,11 @@
         // Fechar todos
         accordion.querySelectorAll('.fam-acc__trigger').forEach(t => {
           t.setAttribute('aria-expanded', 'false');
-          t.nextElementSibling.hidden = true;
+          t.nextElementSibling.classList.remove('open');
         });
         if (!isOpen) {
           trigger.setAttribute('aria-expanded', 'true');
-          body.hidden = false;
+          body.classList.add('open');
         }
       });
 
@@ -508,6 +507,19 @@
     showStep(1);
   }
 
+  /* ===== Pausa floaty quando hero sai de viewport ===== */
+  function pauseFloaty() {
+    const bottle = $('.hero__bottle');
+    if (!bottle || prefersReduced) return;
+    const hero = bottle.closest('.hero');
+    if (!hero) return;
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        bottle.style.animationPlayState = e.isIntersecting ? 'running' : 'paused';
+      });
+    }, { threshold: 0 }).observe(hero);
+  }
+
   /* ===== Fixed WA button ===== */
   function fixedWa() {
     const btn = $('#waFixed');
@@ -538,6 +550,7 @@
     pyramid();
     quiz();
     fixedWa();
+    pauseFloaty();
   }
 
   if (document.readyState === 'loading')
